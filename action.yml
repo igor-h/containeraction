@@ -1,0 +1,14 @@
+name: 'Container Action'
+description: ''
+author: 'Igor Holovka'
+inputs:
+  myInput:
+    description: 'World, Example input to see memory value'
+    required: true
+    default: 'World!!! '
+outputs:
+  myOutput:
+    description: 'total memory'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
